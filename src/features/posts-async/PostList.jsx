@@ -4,7 +4,7 @@ import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
 import ReactionButtons from "./ReactionButtons";
 
-function PostList() {
+function PostListAsync() {
   const posts = useSelector(selectAllPosts);
 
   const orderedPosts = posts
@@ -31,4 +31,4 @@ function PostList() {
   );
 }
 
-export default PostList;
+export default PostListAsync;
