@@ -1,6 +1,6 @@
 import { parseISO, formatDistanceToNow } from "date-fns";
 
-const TimeAgoAsync = ({ timestamp }) => {
+const TimeAgo = ({ timestamp }) => {
   let timeAgo = "";
   if (timestamp) {
     const date = parseISO(timestamp);
@@ -14,4 +14,4 @@ const TimeAgoAsync = ({ timestamp }) => {
     </span>
   );
 };
-export default TimeAgoAsync;
+export default TimeAgo;

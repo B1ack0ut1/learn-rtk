@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
-import { selectAllUsers } from "../users/usersSliceAsync";
+import { selectAllUsers } from "../users/usersSlice";
 
-function PostAuthorAsync({ userId }) {
+function PostAuthor({ userId }) {
   const users = useSelector(selectAllUsers);
 
   const author = users.find((user) => user.id === userId);
@@ -9,4 +9,4 @@ function PostAuthorAsync({ userId }) {
   return <span>by {author ? author.name : "Unknown author"}</span>;
 }
 
-export default PostAuthorAsync;
+export default PostAuthor;

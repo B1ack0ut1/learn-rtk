@@ -8,7 +8,7 @@ const reactionEmoji = {
   coffee: "☕",
 };
 
-const ReactionButtonsAsync = ({ post }) => {
+const ReactionButtons = ({ post }) => {
   const dispatch = useDispatch();
 
   const reactionButtons = Object.entries(reactionEmoji).map(([name, emoji]) => (
@@ -27,4 +27,4 @@ const ReactionButtonsAsync = ({ post }) => {
   return <div>{reactionButtons}</div>;
 };
 
-export default ReactionButtonsAsync;
+export default ReactionButtons;
